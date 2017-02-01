@@ -41,7 +41,7 @@ public class Grab : MonoBehaviour {
 
 		// HAPTIC FEEDBACK - NOT WORKING
 		OVRHapticsClip haptic = new OVRHapticsClip(audioClip);
-		OVRHaptics.RightChannel.Preempt(haptic);
+		OVRHaptics.Channels[0].Preempt(haptic);
 
 
 		isGrabbing = true;
